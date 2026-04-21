@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="fortune.css">
+  <script src="fortune.js" defer></script>
+</head>
+
+<body>
+  <div class="green">
+
+    <input id="birthA" type="text" placeholder="Aの生年月日を入力（例：19900123）" />
+    <input id="birthB" type="text" placeholder="Bの生年月日を入力（例：19900123）" />
+    
+
+    <input id="telling" type="button" value="占う!" />
+    <input id="tellingPair" type="button" value="相性を占う!" />
+
+
+
+  </div>
+
+  <div class="blue">
+    <h2>🔮 四柱推命（年柱）</h2>
+    <p> 
+      <strong>年柱：</strong>
+      <span id="result-year"></span>
+    </p>
+
+    <p> 
+      <strong>五行：</strong>
+      <span id="result-element"></span>
+    </p>
+
+    <p id="result-message"></p>
+  </div>
+
+</body>
