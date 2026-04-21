@@ -1,0 +1,38 @@
+.green {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 0 auto;
+}
+
+.blue {
+  background-color: #0d47a1;
+  color: white;
+  padding: 12px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+/* 五行ごとの色 */
+.blue.木 { color: greenyellow; }
+.blue.火 { color: red; }
+.blue.土 { color: sandybrown; }
+.blue.金 { color: gold; }
+.blue.水 { color: skyblue; }
+
+.blue.high { border: 3px solid gold; }
+.blue.mid  { border: 3px solid silver; }
+.blue.low  { border: 3px solid gray; }
+
+/* 相性スコアの文字色 */
+.score-high {
+  color: gold;
+}
+
+.score-mid {
+  color: #14cb91;
+}
+
+.score-low {
+  color: red;
+}
