@@ -10,32 +10,35 @@
 </head>
 
 <body>
-  <div class="green">
+  <h1 class="title">🔮 四柱推命 相性占い</h1>
+  <div class="container">
+    <div class="green">
 
-    <input id="birthA" type="text" placeholder="Aの生年月日を入力（例：19900123）" />
-    <input id="birthB" type="text" placeholder="Bの生年月日を入力（例：19900123）" />
-    
-
-    <input id="telling" type="button" value="占う!" />
-    <input id="tellingPair" type="button" value="相性を占う!" />
+      <input id="birthA" type="text" placeholder="あなたの生年月日を入力（例：19900123）" />
+      <input id="birthB" type="text" placeholder="相手の生年月日を入力（例：19900123）" />
 
 
+      <input id="telling" type="button" value="占う!" />
+      <input id="tellingPair" type="button" value="相性を占う!" />
 
-  </div>
 
-  <div class="blue">
-    <h2>🔮 四柱推命（年柱）</h2>
-    <p> 
-      <strong>年柱：</strong>
-      <span id="result-year"></span>
-    </p>
 
-    <p> 
-      <strong>五行：</strong>
-      <span id="result-element"></span>
-    </p>
+    </div>
 
-    <p id="result-message"></p>
+    <div class="blue">
+      <h2>🔮 占い結果 🔮</h2>
+      <p>
+        <strong>年柱：</strong>
+        <span id="result-year"></span>
+      </p>
+
+      <p>
+        <strong>五行：</strong>
+        <span id="result-element"></span>
+      </p>
+
+      <p id="result-message"></p>
+    </div>
   </div>
 
 </body>
