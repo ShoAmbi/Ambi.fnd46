@@ -78,6 +78,8 @@ function tellOne() {
   messageEl.textContent = profile.message;
 
   blueBox.className = `blue ${profile.element}`;
+
+  messageEl.classList.remove("score-high", "score-mid", "score-low");
 }
 
 
@@ -93,10 +95,10 @@ function tellPair() {
   }
 
   yearEl.textContent =
-    `A：${profileA.yearPillar} / B：${profileB.yearPillar}`;
+    `あなた：${profileA.yearPillar} / 相手：${profileB.yearPillar}`;
 
   elementEl.textContent =
-    `A：${profileA.element} / B：${profileB.element}`;
+    `あなた：${profileA.element} / 相手：${profileB.element}`;
 
   const compat =
     judgeCompatibility(profileA.element, profileB.element);
@@ -113,8 +115,6 @@ function tellPair() {
   } else {
     messageEl.classList.add("score-low");
   }
-
-  //blueBox.className = `blue`;
 }
 
 
